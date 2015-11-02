@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7617E5D21BDAD480009B48B1 /* HTAutocompleteTextFieldKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7617E5D11BDAD480009B48B1 /* HTAutocompleteTextFieldKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7617E5D71BDAD4A2009B48B1 /* HTEmailAutocompleteTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DFB04B417FD01F500E7B196 /* HTEmailAutocompleteTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7617E5D81BDAD4A2009B48B1 /* HTAutocompleteTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DFB04B617FD01F500E7B196 /* HTAutocompleteTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7617E5D91BDAD4A7009B48B1 /* HTEmailAutocompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFB04B317FD01F500E7B196 /* HTEmailAutocompleteTextField.m */; };
+		7617E5DA1BDAD4A7009B48B1 /* HTAutocompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFB04B517FD01F500E7B196 /* HTAutocompleteTextField.m */; };
 		8D86FEEE16E96D4800534BDD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D86FEED16E96D4800534BDD /* MainStoryboard.storyboard */; };
 		8DF4A805168B7C610025E16D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4A804168B7C610025E16D /* UIKit.framework */; };
 		8DF4A807168B7C610025E16D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF4A806168B7C610025E16D /* Foundation.framework */; };
@@ -28,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		541886FBCF924E768C27BA1C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7617E5CF1BDAD480009B48B1 /* HTAutocompleteTextFieldKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTAutocompleteTextFieldKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7617E5D11BDAD480009B48B1 /* HTAutocompleteTextFieldKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTAutocompleteTextFieldKit.h; sourceTree = "<group>"; };
+		7617E5D31BDAD480009B48B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D86FEED16E96D4800534BDD /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8DF4A800168B7C610025E16D /* HTTextFieldAutocompletionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTTextFieldAutocompletionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF4A804168B7C610025E16D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -56,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7617E5CB1BDAD480009B48B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DF4A7FD168B7C610025E16D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,11 +84,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7617E5D01BDAD480009B48B1 /* HTAutocompleteTextFieldKit */ = {
+			isa = PBXGroup;
+			children = (
+				7617E5D11BDAD480009B48B1 /* HTAutocompleteTextFieldKit.h */,
+				7617E5D31BDAD480009B48B1 /* Info.plist */,
+			);
+			path = HTAutocompleteTextFieldKit;
+			sourceTree = "<group>";
+		};
 		8DF4A7F5168B7C610025E16D = {
 			isa = PBXGroup;
 			children = (
 				8DF4A83A168B7CFC0025E16D /* Core */,
 				8DF4A80A168B7C610025E16D /* HTTextFieldAutocompletionExample */,
+				7617E5D01BDAD480009B48B1 /* HTAutocompleteTextFieldKit */,
 				8DF4A803168B7C610025E16D /* Frameworks */,
 				8DF4A801168B7C610025E16D /* Products */,
 			);
@@ -83,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				8DF4A800168B7C610025E16D /* HTTextFieldAutocompletionExample.app */,
+				7617E5CF1BDAD480009B48B1 /* HTAutocompleteTextFieldKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,7 +178,38 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7617E5CC1BDAD480009B48B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7617E5D21BDAD480009B48B1 /* HTAutocompleteTextFieldKit.h in Headers */,
+				7617E5D81BDAD4A2009B48B1 /* HTAutocompleteTextField.h in Headers */,
+				7617E5D71BDAD4A2009B48B1 /* HTEmailAutocompleteTextField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		7617E5CE1BDAD480009B48B1 /* HTAutocompleteTextFieldKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7617E5D41BDAD480009B48B1 /* Build configuration list for PBXNativeTarget "HTAutocompleteTextFieldKit" */;
+			buildPhases = (
+				7617E5CA1BDAD480009B48B1 /* Sources */,
+				7617E5CB1BDAD480009B48B1 /* Frameworks */,
+				7617E5CC1BDAD480009B48B1 /* Headers */,
+				7617E5CD1BDAD480009B48B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTAutocompleteTextFieldKit;
+			productName = HTAutocompleteTextFieldKit;
+			productReference = 7617E5CF1BDAD480009B48B1 /* HTAutocompleteTextFieldKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8DF4A7FF168B7C610025E16D /* HTTextFieldAutocompletionExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DF4A827168B7C610025E16D /* Build configuration list for PBXNativeTarget "HTTextFieldAutocompletionExample" */;
@@ -179,6 +236,11 @@
 				CLASSPREFIX = HT;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Hotel Tonight";
+				TargetAttributes = {
+					7617E5CE1BDAD480009B48B1 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
 			};
 			buildConfigurationList = 8DF4A7FA168B7C610025E16D /* Build configuration list for PBXProject "HTTextFieldAutocompletionExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -193,11 +255,19 @@
 			projectRoot = "";
 			targets = (
 				8DF4A7FF168B7C610025E16D /* HTTextFieldAutocompletionExample */,
+				7617E5CE1BDAD480009B48B1 /* HTAutocompleteTextFieldKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7617E5CD1BDAD480009B48B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DF4A7FE168B7C610025E16D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +286,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7617E5CA1BDAD480009B48B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7617E5D91BDAD4A7009B48B1 /* HTEmailAutocompleteTextField.m in Sources */,
+				7617E5DA1BDAD4A7009B48B1 /* HTAutocompleteTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DF4A7FC168B7C610025E16D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +322,90 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7617E5D51BDAD480009B48B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = HTAutocompleteTextFieldKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoteltonight.HTAutocompleteTextFieldKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7617E5D61BDAD480009B48B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = HTAutocompleteTextFieldKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoteltonight.HTAutocompleteTextFieldKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8DF4A825168B7C610025E16D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,6 +485,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7617E5D41BDAD480009B48B1 /* Build configuration list for PBXNativeTarget "HTAutocompleteTextFieldKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7617E5D51BDAD480009B48B1 /* Debug */,
+				7617E5D61BDAD480009B48B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8DF4A7FA168B7C610025E16D /* Build configuration list for PBXProject "HTTextFieldAutocompletionExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
